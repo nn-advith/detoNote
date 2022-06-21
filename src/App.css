@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  max-height: 95vh;
+  overflow: hidden;
+  background-color: #4A4B4B
+} 
