@@ -34,9 +34,9 @@ const Insert = () => {
         method: 'post',
         url: 'https://detonote-server.herokuapp.com/addnote',
         data: data1
-      }).then((res) => { navigate(`/link/${res.data.url}`); setUrlRec(true)})
-      setSender('')
-      setMessage('')
+      }).then((res) => { navigate(`/link/${res.data.url}`); setUrlRec(true); setSender('')
+      setMessage('')})
+      
     }
     
   }

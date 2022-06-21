@@ -30,7 +30,8 @@ const ShowNote = () => {
       (message === 'nf' ? 
       <LinkDisplay>
       The note has been destroyed. Ask the sender to send the note again.
-      </LinkDisplay> :
+      </LinkDisplay> 
+      :
       <div>
       <div className='noteurl'>
       Note From 

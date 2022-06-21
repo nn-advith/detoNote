@@ -14,7 +14,7 @@ export const Navbar = styled.nav`
     height: 5vh;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 25px 20px;
 `
 
 export const NavbarWrapper = styled.div`
@@ -22,6 +22,18 @@ export const NavbarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 770px){
+        width: 90vw;
+        flex-direction: column;
+        align-items: start;
+
+        .mainhead{
+            margin: 5px 0;
+        }
+
+    }
+
 
     .white{
         color: #ddd;
@@ -48,7 +60,14 @@ export const NavbarWrapper = styled.div`
 export const OutletWrapper = styled.div`
     width: 40vw;
     padding: 20px;
-    min-height: 73vh;
+
+
+    @media screen and (max-width: 770px){
+       width: 90vw;
+       overflow-x: hidden;
+       padding: 0;
+    }
+
 
 `
 
@@ -58,6 +77,8 @@ export const InputWrapper = styled.div`
     padding: 5px;
     margin: 20px 0px;
     flex-direction: column;
+
+    
 `
 
 export const DisplayWrapper = styled.div`
@@ -93,6 +114,14 @@ export const LinkDisplay = styled.div`
     background-color: #1f1f1f;
     padding: 20px;
     color: #fff;
+
+
+    @media screen and (max-width: 770px){
+       width: 75vw;
+      
+       word-wrap: break-word;
+    }
+
 `
 
 export const TextDisplay = styled.div`
@@ -104,6 +133,11 @@ export const TextDisplay = styled.div`
     font-weight: 200;
     line-height: 20px;
     color: #fff;
+
+    @media screen and (max-width: 770px){
+       width: 75vw;
+       word-wrap: break-word;
+    }
 `
 
 
@@ -119,6 +153,10 @@ export const Input = styled.input`
     border-radius: 10px;
     padding: 15px 20px;
     margin: 5px 0;
+
+    @media screen and (max-width: 770px){
+        width: 60vw;
+    }
 
     &:focus{
 
@@ -144,6 +182,10 @@ export const TextArea = styled.textarea`
     margin: 5px 0;
     height: 300px;
     resize: none;
+
+    @media screen and (max-width: 770px){
+        width: 75vw;
+    }
 
     &:focus{
 
@@ -182,10 +224,12 @@ export const FooterWrapper = styled.div`
     display:flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding:40px 20px;
     color: #6F6F6F;
     font-size: 0.8rem;
-    height: 7vh;
+
+    position: fixed;
+    bottom: 0vh;
 
     .link{
         cursor: pointer;
@@ -209,6 +253,12 @@ export const FooterWrapper = styled.div`
             text-decoration: underline;
         }
     }
+
+    @media screen and (max-width:770px){
+        bottom: 0vh;
+    }
+
+
 
 `
 
